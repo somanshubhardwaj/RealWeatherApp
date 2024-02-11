@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="home">
+
+
+    <div class="logo">
+      <div class="dark-weather">Mausam</div>
+      <div class="weatherpara">Mausam ka anuman lga sakte hain !</div>
+
+
+
+
+
+    </div>
+    <div class="search-filters">
+      <div class="search-here-wrapper">
+        <div class="search-here">
+          <form>
+            <label for="latitude">Latitude</label>
+            <input type="text" id="latitude" name="latitude" placeholder="Enter latitude">
+            <label for="longitude">Longitude</label>
+            <input type="text" id="longitude" name="longitude" placeholder="Enter longitude">
+          </form>
+          <div class="searchButton">
+            <button type="button" onclick="getWeather()">Get Weather</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-parent">
+        <div class="card">
+          <div class="card-inner"> <img id="weather-image" alt="" src="/photos/weather.png" />
+
+            <div class="frame-group">
+              <div class="logo">
+                <div class="city">
+                  <span class="cityname">City</span>
+                  <br>
+                  <div class="temperature">Temp:
+                    <span class="temp"></span>
+                    <span class="c">°C</span>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="home-wrapper">
+                <div class="details">
+                  <span class="wind">Wind Speed :</span>
+                  <span class="windspeed"></span>
+                  <span class="units">km</span>
+
+                </div>
+              </div>
+              <div class="home-wrapper">
+                <div class="day">
+                </div>
+              </div>
+              <div class="home-wrapper">
+                <div class="weather">Weather</div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
