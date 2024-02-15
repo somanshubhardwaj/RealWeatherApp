@@ -168,10 +168,11 @@ body {
 
 
 
-#latitude ,#longitude{
+#latitude,
+#longitude {
   background-color: #1B262C;
   border-style: none;
-color:white;
+  color: white;
   height: 32px;
   width: 247px;
   text-align: center;
@@ -181,13 +182,17 @@ color:white;
 
 }
 
-#latitude:focus, #longitude:focus{
+#latitude:focus,
+#longitude:focus {
   outline: none;
   border: 0.25px solid #fff;
 }
-#latitude:hover, #longitude:hover{
+
+#latitude:hover,
+#longitude:hover {
   border-bottom: 0.2px solid #fff;
 }
+
 button {
 
 
