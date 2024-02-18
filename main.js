@@ -12,6 +12,7 @@ function updateWeatherImages(weatherCondition) {
     Rain: "./photos/rainy.png",
     Snow: "./photos/snowy.png",
   };
+  
   if (weatherImages.hasOwnProperty(weatherCondition)) {
     const imagePath = weatherImages[weatherCondition];
     weatherImageElement.src = imagePath;
